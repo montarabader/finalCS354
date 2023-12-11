@@ -1,0 +1,246 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-image: url('background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+nav {
+    background-color: #C74343;
+    color: white;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav a {
+    color: #F0C971;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover,
+nav a:active,
+nav a.active {
+    background-color: black;
+    color: white;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav li {
+    margin: 0 10px;
+    position: relative;
+}
+
+nav ul ul {
+    display: none;
+    position: absolute;
+    background-color: #333;
+    text-align: left;
+    z-index: 2;
+}
+
+nav li:hover > ul {
+    display: block;
+}
+
+nav ul ul li {
+    display: block;
+}
+
+nav ul ul a {
+    margin: 0;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    display: block;
+}
+
+nav ul ul a:hover {
+    background-color: #555;
+}
+
+.logo {
+    text-align: left;
+    padding: 20px;
+}
+
+.logo img {
+    max-width: 150px;
+    height: auto;
+}
+
+.slideshow {
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+
+.slideshow img {
+    width: 100%;
+    height: auto;
+}
+
+.slideshow .prev,
+.slideshow .next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 20px;
+    cursor: pointer;
+    color: white;
+    background-color: #333;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
+
+.location {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.location-info {
+    max-width: 45%;
+}
+
+.map {
+    max-width: 67%;
+}
+
+.main-container {
+    padding: 20px;
+}
+
+.rectangular-button {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            background-color: #333;
+            color: white;
+            border: none;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none; 
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+.button-group {
+    display: flex;
+	gap:10px;
+}
+
+.button-group button {
+    flex: 1;
+    margin-right: 10px;
+}
+
+h2 {
+text-align: center;
+}
+
+.loyalty {
+text-align: center;
+margin: 30px;
+}
+
+.glenside{
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size:22px;
+}
+
+.media{
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    font-size:22px;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 300px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-weight: bold;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+input[type="checkbox"] {
+            margin-right: 5px;
+}
+
+button {
+    background-color: #4caf50;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+ button:hover {
+    background-color: #45a049;
+}
+
+.customer-buttons button {
+    background-color: #C74343; 
+    color: white; 
+    padding: 10px 20px; 
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.customer-buttons button:hover {
+    background-color: #990000;
+}

@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Apollo Pizza</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="main-container">
+<nav>
+    <ul>
+        <li><a href="#order">Order Online</a>
+	<ul>
+                <li><a href="https://apollopizza-glenside.foodtecsolutions.com/ordering/home" target="_blank">Glenside</a></li>
+                <li><a href="https://apollopizza-media.foodtecsolutions.com/ordering/home" target="_blank">Media</a></li>
+            </ul>
+	</li>
+	<li><a href="final.html">Home</a></li>
+        <li>
+            <a href="final.html">Find us</a>
+            <ul>
+                <li><a href="#glenside">Glenside</a></li>
+                <li><a href="#media">Media</a></li>
+            </ul>
+        </li>
+        <li><a href="loyalty.html">Loyalty Program</a></li>
+    </ul>
+</nav>
+
+<div class="logo">
+    <img src="apolloLogo.gif" alt="Apollo Pizza Logo">
+</div>
+
+<div class="slideshow">
+    <img src="slide1.jpg" alt="Slide 1">
+    <img src="slide2.jpg" alt="Slide 2">
+    <img src="slide3.jpg" alt="Slide 3">
+    <img src="slide4.jpg" alt="Slide 4">
+    <img src="slide5.jpg" alt="Slide 5">
+    <img src="slide6.jpg" alt="Slide 6">
+    <img src="slide7.jpg" alt="Slide 7">
+    <button class="prev" onclick="plusSlides(-1)">&#10094;</button>
+    <button class="next" onclick="plusSlides(1)">&#10095;</button>
+</div>
+<hr>
+
+<section id="glenside" class="location">
+    <div class="location-info">
+        <h2>Apollo Pizza Glenside</h2>
+        <p>Address</p>
+        <p>Telephone</p>
+        <p>-- Store Hours --</p>
+        <p>Monday</p>
+        <a href="https://apollopizza-glenside.foodtecsolutions.com/ordering/home" target="_blank" class="rectangular-button">Order Online</a>
+        <div class="button-group">
+		<a href="https://apollopizza-glenside.foodtecsolutions.com/ordering/questionnaire?type=Contact" target="_blank" class="rectangular-button">Contact Us</a>
+		<a href="https://apollopizza-glenside.foodtecsolutions.com/ordering/questionnaire?type=Feedback" target="_blank" class="rectangular-button">Feedback</a>
+		<a href="https://apollopizza-glenside.foodtecsolutions.com/ordering/questionnaire?type=Career" target="_blank" class="rectangular-button">Employment</a>
+                </div>
+
+    </div>
+    <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3055.036308451112!2d-75.156547!3d40.1002539!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6b09fdaee261d%3A0xed82c010fcfdf08c!2sApollo's%20Pizza!5e0!3m2!1sen!2sus!4v1638940763054!5m2!1sen!2sus"
+                width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+</section>
+<hr>
+
+<section id="media" class="location">
+    <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12184.650972134532!2d-75.387854!3d39.917546!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c6e907fe81c62d%3A0xa29b77d189fe900b!2sApollo%20Pizza!5e0!3m2!1sen!2sus!4v1638943765832!5m2!1sen!2sus"
+                width="900" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+
+    <div class="location-info">
+        <h2>Apollo Pizza Media</h2>
+        <p>Address</p>
+        <p>Telephone</p>
+        <p>-- Store Hours --</p>
+        <p>Monday</p>
+        <a href="https://apollopizza-media.foodtecsolutions.com/ordering/home" target="_blank" class="rectangular-button">Order Online</a>
+        <div class="button-group">
+		<a href="https://apollopizza-media.foodtecsolutions.com/ordering/questionnaire?type=Contact" target="_blank" class="rectangular-button">Contact Us</a>
+		<a href="https://apollopizza-media.foodtecsolutions.com/ordering/questionnaire?type=Feedback" target="_blank" class="rectangular-button">Feedback</a>
+		<a href="https://apollopizza-media.foodtecsolutions.com/ordering/questionnaire?type=Career" target="_blank" class="rectangular-button">Employment</a>
+                </div>
+    </div>
+</section>
+
+<script>
+    let slideIndex = 0;
+
+    function showSlides() {
+        let slides = document.querySelectorAll('.slideshow img');
+        for (let i = 0; i < slides.length; i++) {
+            slides[i].style.display = 'none';
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) { slideIndex = 1; }
+        slides[slideIndex - 1].style.display = 'block';
+        setTimeout(showSlides, 4000);
+    }
+
+    function plusSlides(n) {
+        showSlides(slideIndex += n);
+    }
+
+    showSlides();
+</script>
+</div>
+<hr>
+
+
+</body>
+</html>
